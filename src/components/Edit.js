@@ -1,5 +1,5 @@
 import React from 'react'
-import { Row, Col, Input, Icon, Tag, Affix, Card, Divider } from 'antd'
+import { Row, Col, Input, Tag, Affix, Card, Divider } from 'antd'
 import { Route } from 'react-router-dom'
 import { Base64 } from 'js-base64'
 import mermaid from 'mermaid'
