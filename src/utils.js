@@ -18,14 +18,12 @@ export const base64ToState = (base64, search) => {
   return state
 }
 
-const defaultCode = `graph TD
-A[Christmas] -->|Get money| B(Go shopping)
-B --> C{Let me think}
-C -->|One| D[Laptop]
-C -->|Two| E[iPhone]
-C -->|Three| F[fa:fa-car Car]
+const defaultCode = `graph LR
+Browser(<span class='icon client'></span> Browser)
+Server(<span class='icon origin'></span> Server)
+Proxy(<span class='icon proxy'></span> Proxy)
 `
 export const defaultState = {
   code: defaultCode,
-  mermaid: { theme: 'default' }
+  mermaid: { theme: 'icons' }
 }

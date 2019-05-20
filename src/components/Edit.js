@@ -50,26 +50,17 @@ class Edit extends React.Component {
   render () {
     const { match: { url } } = this.props
     return <div>
-      <h1>Mermaid Live Editor</h1>
+      <h1>Draw the Docs</h1>
       <Divider />
       <Row gutter={16}>
         <Col span={8}>
           <Affix>
-            <Card title='Code'>
+            <Card title='Diagram'>
               <Input.TextArea autosize={{ minRows: 4, maxRows: 16 }} value={this.json.code} onChange={this.onCodeChange} />
             </Card>
           </Affix>
-          <Card title='Mermaid configuration'>
+          <Card title='Configuration'>
             <Input.TextArea autosize={{ minRows: 4, maxRows: 16 }} defaultValue={JSON.stringify(this.json.mermaid, null, 2)} onChange={this.onMermaidConfigChange} />
-          </Card>
-          <Card title='Links'>
-            <ul className='marketing-links'>
-              <li><a href='https://mermaidjs.github.io/' target='_blank'><Icon type='book' /> Mermaid Documentation</a></li>
-              <li><a href='https://github.com/knsv/mermaid' target='_blank'><Icon type='github' /> Mermaid on GitHub</a></li>
-              <li><a href='https://github.com/mermaidjs/mermaid-gitbook' target='_blank'><Icon type='github' /> Documentation on GitHub</a></li>
-              <li><a href='https://github.com/mermaidjs/mermaid-live-editor' target='_blank'><Icon type='github' /> Live Editor on GitHub</a></li>
-              <li><a href='https://github.com/mermaidjs/mermaid.cli' target='_blank'><Icon type='github' /> Mermaid CLI</a></li>
-            </ul>
           </Card>
         </Col>
         <Col span={16}>
