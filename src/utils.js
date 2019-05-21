@@ -25,5 +25,5 @@ Proxy(<span class='icon proxy'></span> Proxy)
 `
 export const defaultState = {
   code: defaultCode,
-  mermaid: { theme: 'icons' }
+  mermaid: { theme: 'whimsy' }
 }
